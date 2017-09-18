@@ -20,7 +20,7 @@ def main(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('main'))
 
     return render(request, 'main/main.html', context)
 
@@ -40,7 +40,7 @@ def downloads_drop(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse(''))
+        return redirect(reverse('main'))
 
     return render(request, 'main/downloads_drop.html', context)
    

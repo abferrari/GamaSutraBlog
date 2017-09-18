@@ -17,8 +17,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
 
-    <script src="js/main.js"></script>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -100,11 +98,10 @@
 
 			<div class="row">
 				<form  method="post">
+          {% csrf_token %}
 					<div class="container">
 						<div class="col-md-8 col-sm-12 container form-newsletter">
 							<p>Quer receber dicas e materiais educativos sobre o impacto de mobile apps no seu negócio? Informe seu e-mail abaixo!</p>
-
-							<input type='hidden' name='csrfmiddlewaretoken' value='WApBBlv7BUfSTtTwuZQHohAzsRY1184kvGRUDQVR8lNFMy5IBzvwHbBdKCK1SCLG' />
 
 							<div class="col-md-6 col-sm-6">
 								<label for="id_first_name">Nome</label>
