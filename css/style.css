@@ -21,6 +21,7 @@ p {
 }
 
 .cover {
+	height: 35vh;
 	background-image:url(../img/cover.jpg);
 	background-repeat:no-repeat;
     background-size:cover;
@@ -42,6 +43,15 @@ nav.jumbotron {
 	position: fixed;
 	right: 40px;
 	top: 150px;
+
+	border-radius: 4px;
+	background-color: orange;
+	color: white;
+
+}
+.form p {
+	padding: 16px;
+	font-size: 0.8rem;
 }
 
 article.card {
