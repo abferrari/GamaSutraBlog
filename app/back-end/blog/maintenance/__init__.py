@@ -1,5 +1,6 @@
 from main.models import Lead
 from django.utils.timezone import localtime
+from maintenance.report import report
 
 def do():
     aaa = Lead.objects.all()
