@@ -16,8 +16,9 @@ def report():
             'email': lead.email,
             'date': localtime(lead.timestamp).strftime('%d/%m/%Y'),
             'hour': localtime(lead.timestamp).strftime('%H:%M:%S'),
+            'IP': lead.ip,
         }
-        csv = '{full_name},{email},{date},{hour}'.format(**reg)
+        csv = '{full_name},{email},{date},{hour},{IP}'.format(**reg)
         file_handler.write(csv + '\n')
 
     print 'Done'
