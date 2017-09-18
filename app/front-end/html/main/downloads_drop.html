@@ -1,0 +1,142 @@
+<html>
+{% load staticfiles %}
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+	<nav class="jumbotron cover">
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-12">
+				<img class="brand img-responsive" src="{% static 'img/brand.png' %}" />
+			</div>
+			<div class="col-md-10 col-sm-10 col-xs-12" style="margin: initial 20px;">
+				<h1>Mobile Growth</h1>
+				<h3>Tudo sobre mobile apps para o seu negócio</h3>
+			</div>	
+ 		</div>
+	</nav>
+	<main class="post-page">
+		<!--
+		<div class="container hidden-xs form-newsletter--side">
+			<form  method="post row">
+				<div class="col-md-offset-9 col-md-3 col-sm-offset-9 col-sm-3 container form-newsletter">
+					<p class="row">Inscreva-se na newsletter!</p>
+
+					<input type='hidden' name='csrfmiddlewaretoken' value='WApBBlv7BUfSTtTwuZQHohAzsRY1184kvGRUDQVR8lNFMy5IBzvwHbBdKCK1SCLG' />
+
+					<div class="row">
+						<label for="id_first_name">Nome</label>
+						<input class="form-control" type="text" name="first_name" required id="id_first_name" maxlength="100" />
+					</div>
+					<div class="row">
+						<label for="id_last_name">Sobrenome</label>
+						<input class="form-control" type="text" name="last_name" required id="id_last_name" maxlength="100" />
+					</div>
+					<div class="row">
+						<label for="id_email">E-mail</label>
+						<input class="form-control" type="email" name="email" required id="id_email" maxlength="254" />
+					</div>
+					<div class="row">
+						<input style="margin-top: 20px;" class="btn btn-default btn-primary pull-right" type="submit" value="Inscreva-se!" />
+					</div>
+				</div>
+			</form>
+		</div>
+		-->
+
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-8 col-sm-9">
+					<img class="post-cover img-responsive" src="{% static 'img/cover.jpg' %}" />
+				</div>
+
+				<div class="col-md-8 col-sm-9 post-content">
+					<h6>Setembro 17, 2017</h6>
+					<h2 class="title">Os downloads caíram... e agora?</h2>
+					<h4 class="subtitle">Estratégias para retomar o ritmo de downloads do seu aplicativo</h4>
+
+					<p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.</p>
+					<p>Estas e outras considerações serão revistas a seguir. Are you ready?</p>
+
+					<h3 class="subtitle-content">Subtítulo no meio do texto</h3>
+					<p>O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.</p>
+				</div>
+
+				<div class="col-md-8 col-sm-9">
+					<div class="author">
+						<img src="{% static 'img/lia.jpg' %}" class="pic-profile" />
+						<div>
+							<p>Lia de Castilhos Negri</p>
+							<p>Setembro 17, 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>&nbsp;</p>
+
+			<div class="row">
+				<form  method="post">
+					<div class="container">
+						<div class="col-md-8 col-sm-12 container form-newsletter">
+							<p>Quer receber dicas e materiais educativos sobre o impacto de mobile apps no seu negócio? Informe seu e-mail abaixo!</p>
+
+							<input type='hidden' name='csrfmiddlewaretoken' value='WApBBlv7BUfSTtTwuZQHohAzsRY1184kvGRUDQVR8lNFMy5IBzvwHbBdKCK1SCLG' />
+
+							<div class="col-md-6 col-sm-6">
+								<label for="id_first_name">Nome</label>
+								<input class="form-control" type="text" name="first_name" required id="id_first_name" maxlength="100" />
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<label for="id_last_name">Sobrenome</label>
+								<input class="form-control" type="text" name="last_name" required id="id_last_name" maxlength="100" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<label for="id_email">E-mail</label>
+								<input class="form-control" type="email" name="email" required id="id_email" maxlength="254" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<input style="margin-top: 20px;" class="btn btn-default btn-primary pull-right" type="submit" value="Inscreva-se!" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid">
+		<div class="row">
+			
+				<a tabindex="1" class="share-btn fb-share-button" alt="Compartilhar no Facebook" title="Compartilhar no Facebook" data-mobile-iframe="true" data-href="http://mautic.nute.ufsc.br/pesquisa-usuarios-lantec-mec" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmautic.nute.ufsc.br%2Fpesquisa-usuarios-lantec-mec&src=sdkpreparse" target="_blank"><img src="{% static 'img/FB-f-Logo_white_72.png' %}" alt="Compartilhar no Facebook" /></a>
+        
+		        <a tabindex="2" class="share-btn share-btn-whatsapp" alt="Compartilhar no WhatsApp" title="Compartilhar no WhatsApp" href="https://api.whatsapp.com/send?text=http%3A%2F%2Fmautic.nute.ufsc.br%2Fpesquisa-usuarios-lantec-mec"><img src="{% static 'img/WhatsApp_Logo-01.png' %}" alt="Compartilhar no WhatsApp" /></a>
+
+			
+		</div>	
+	</footer>
+</body>
+
+</html>
