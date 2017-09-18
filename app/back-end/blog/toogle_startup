@@ -1,0 +1,14 @@
+echo "PYTHONSTARTUP=[$PYTHONSTARTUP]"
+
+to_define='maintenance/maintenance_mode.py'
+
+if [ "$PYTHONSTARTUP" ]; then
+    echo "defined, erasing it"
+    export PYTHONSTARTUP=''
+
+else
+    echo "NOT defined, defining"
+    export PYTHONSTARTUP=$to_define
+    echo "PYTHONSTARTUP=[$PYTHONSTARTUP]"
+fi
+
