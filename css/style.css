@@ -2,6 +2,7 @@
 	--orange-color: #ff7e38;
 	--blue-color: #1e9ac7;
 	--black-color: #333;
+	--gray-color: #666;
 }
 
 html {
@@ -57,19 +58,28 @@ a:hover {
 }
 
 .form-newsletter {
-	background-color: gray;
-	position: absolute;
-	right: 40px;
-	top: 30vh;
-	padding: 8px 16px;
-
+	padding: 16px !important;
 	border-radius: 4px;
-	background-color: orange;
+	background-color: var(--orange-color);
 	color: white;
-
 }
 
+.form-newsletter label {
+	margin-top: 16px;
+}
 .form-newsletter p {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.form-newsletter .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.form-newsletter--side {
+	padding: 0;
+	position: absolute;
+}
+.form-newsletter--side p {
 	font-size: 0.6rem;
 }
 
@@ -103,17 +113,17 @@ a:hover {
 	color: #666;
 }
 
-.card .author p {
-	font-size: 0.6rem !important;
-	line-height: 1;
-	margin-bottom: 8px;
-}
 .author {
 	display: flex;
 	align-content: center;
 
 	font-weight: 300;
 	color: gray;
+}
+.author p {
+	font-size: 0.6rem !important;
+	line-height: 1;
+	margin-bottom: 8px;
 }
 .author img {
 	width: 48px;
@@ -129,3 +139,31 @@ footer {
 	width: 100%;
 }
 
+/* ------ Post Page --------------------------------------*/
+
+.post-page {
+
+}
+
+.post-page .post-cover {
+
+}
+
+.post-page .title {
+	font-size: 2rem;
+	font-weight: 600;
+}
+.post-page .subtitle {
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: var(--gray-color);
+}
+.post-page .subtitle-content {
+	font-size: 1.3rem;
+	margin-top: 2rem;
+}
+.post-page .post-content p {
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 1.2rem 0;
+}
