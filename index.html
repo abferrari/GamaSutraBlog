@@ -42,10 +42,12 @@
  		</div>
 	</nav>
 	<main class="home">
+		<!--
 		<div class="col-md-2 col-sm-3 hidden-xs form-newsletter form-newsletter--side">
 			<p>Receba as novidades sobre negócios e tecnologias mobile</p>
 			
 		</div>
+	-->
 		<div class="container">
 			<!--
 			<div class="row">
@@ -103,6 +105,35 @@
 					</article>
 				</div>
 			</div>
+			<p>&nbsp;</p>
+			<div class="row">
+				<form  method="post">
+					<div class="container">
+						<div class="col-md-offset-1 col-md-8 col-sm-12 container form-newsletter">
+							<p>Quer receber dicas e materiais educativos sobre o impacto de mobile apps no seu negócio? Informe seu e-mail abaixo!</p>
+
+							<input type='hidden' name='csrfmiddlewaretoken' value='WApBBlv7BUfSTtTwuZQHohAzsRY1184kvGRUDQVR8lNFMy5IBzvwHbBdKCK1SCLG' />
+
+							<div class="col-md-6 col-sm-6">
+								<label for="id_first_name">Nome</label>
+								<input class="form-control" type="text" name="first_name" required id="id_first_name" maxlength="100" />
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<label for="id_last_name">Sobrenome</label>
+								<input class="form-control" type="text" name="last_name" required id="id_last_name" maxlength="100" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<label for="id_email">E-mail</label>
+								<input class="form-control" type="email" name="email" required id="id_email" maxlength="254" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<input style="margin-top: 20px;" class="btn btn-default btn-primary pull-right" type="submit" value="Inscreva-se!" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 		</div>
 	</main>
 	<footer>
