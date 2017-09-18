@@ -32,7 +32,7 @@ a:hover {
 }
 
 .cover {
-	background-image:url(../img/cover.jpg);
+	background-image:url(/static/img/cover.jpg);
 	background-repeat:no-repeat;
     background-size:cover;
     background-position: center bottom;
