@@ -1,10 +1,12 @@
+import codecs
 from main.models import Lead
 from django.utils.timezone import localtime
 
 
 def report():
     
-    file_handler = open('leads.csv', 'w+')
+    #file_handler = open('leads.csv', 'w+')
+    file_handler = codecs.open('leads.csv', 'w', 'utf8') 
 
     header = 'Nome Completo,e-mail,data,hora,IP'
     
