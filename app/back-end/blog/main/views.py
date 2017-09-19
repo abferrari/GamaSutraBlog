@@ -44,3 +44,21 @@ def downloads_drop(request):
 
     return render(request, 'main/downloads_drop.html', context)
    
+
+# Create your views here.
+def whatsapp4business(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        lead.save()
+
+        return redirect(reverse('main'))
+
+    return render(request, 'main/whatsapp-para-empresas.html', context)
+  
