@@ -186,7 +186,7 @@ footer .row {
 .post-page .img-content {
 	display: inline;
 	max-height: auto;
-	width: 90%;
+	width: 80%;
 	object-fit: contain;
 	text-align: center;
 }
