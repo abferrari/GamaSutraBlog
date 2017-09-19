@@ -230,8 +230,11 @@ footer .copyright p {
 }
 
 .post-page .post-share-bts {
-
+	
+}
+.post-page .post-share-bts p {
+	font-size: 0.8rem;
 }
 .post-page .post-share-bts a {
-	background-color: gray;
+	margin: 0 10px;
 }
