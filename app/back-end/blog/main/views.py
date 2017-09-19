@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
 
+from main.models import Lead
 from main.forms import LeadForm
 from main.ip_utils import get_client_ip
 
@@ -96,3 +97,9 @@ def considerations(request):
 
     return render(request, 'main/o-que-considerar-em-um-app-para-o-seu-negocio.html', context)
 
+def show(request):
+    
+    context = {'leads': Lead.list()}
+
+
+    return render(request, 'main/secret.html', context)
