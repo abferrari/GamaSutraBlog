@@ -214,6 +214,10 @@ footer .copyright p {
 .post-page .subtitle-content {
 	font-size: 1.3rem;
 	margin-top: 2rem;
+	color: var(--gray-color);
+}
+.post-page .post-content {
+	margin-top: 20px;
 }
 .post-page .post-content p {
 	font-weight: 300;
@@ -222,18 +226,20 @@ footer .copyright p {
 }
 
 .post-page .post-references p, .post-page .post-references a {
-	font-size: 0.8rem !important;
-	line-height: 0.8;
+	font-size: 0.7rem !important;
+	line-height: 1;
+	margin: 0.8rem 0;
 }
 .post-page .post-references a {
 	word-break: break-all;
 }
 
 .post-page .post-share-bts {
-	
+	margin-bottom: 2rem;
 }
 .post-page .post-share-bts p {
 	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
 }
 .post-page .post-share-bts a {
 	margin: 0 10px;
