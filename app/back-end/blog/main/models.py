@@ -21,14 +21,19 @@ class Lead(models.Model):
         lead_list = []
 
         for lead in Lead.objects.all():
+
+            datetime =  localtime(lead.timestamp).strftime('%Y-%m-%d') + ' ' +\
+                localtime(lead.timestamp).strftime('%H:%M:%S')
+
             reg = {
-                'full_name': lead.first_name + ' ' + lead.last_name,
                 'email': lead.email,
-                'date': localtime(lead.timestamp).strftime('%d/%m/%Y'),
-                'hour': localtime(lead.timestamp).strftime('%H:%M:%S'),
+                'full_name': lead.first_name + ' ' + lead.last_name,
                 'IP': lead.ip,
+                'type': '',
+                'date_time': datetime, 
             }
-            csv = '{full_name},{email},{date},{hour},{IP}'.format(**reg)
+            #csv = '{full_name},{email},{date},{hour},{IP}'.format(**reg)
+            csv = '{email},{full_name},{IP},{type},{date_time}'.format(**reg)
             lead_list.append(csv)
 
         return lead_list
