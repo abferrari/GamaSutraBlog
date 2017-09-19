@@ -88,6 +88,9 @@ a:hover {
 .form-newsletter--side p {
 	font-size: 0.6rem;
 }
+.form-newsletter .btn {
+	font-size: 0.8rem;
+}
 
 .card {
 	margin: 20px; 
@@ -112,6 +115,7 @@ a:hover {
 .card .subtitle {
 	flex-grow: 1;
 	font-weight: 300;
+	line-height: 1.2;
 	/*
 	font-size: 0.8rem;
 	line-height: 1;
