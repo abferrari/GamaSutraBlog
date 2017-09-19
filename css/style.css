@@ -33,7 +33,7 @@ a:hover {
 }
 
 .cover {
-	background-image:url(../img/cover.jpg);
+	background-image:url(../img/cover_smaller.jpg);
 	background-repeat:no-repeat;
     background-size:cover;
     background-position: center bottom;
@@ -41,7 +41,6 @@ a:hover {
 .cover img.brand {
 	max-width: 100px;
 	min-width: 60px;
-	width: 100%;
 	object-fit: contain;
 }
 
@@ -51,11 +50,17 @@ a:hover {
 }
 
 .cover h1 {
-	font-weight: 600;
-} 
-
+	font-weight: 700;
+}
 .cover h3 {
 	font-weight: 300;
+}
+.cover a {
+	display: inline-block;
+	text-decoration: none;
+}
+.cover h1, .cover h3 {
+	text-shadow: 2px 2px 8px rgba(255,255,255,0.2);
 }
 
 .form-newsletter {
