@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'downloads-cairam/$', views.downloads_drop, name='downloads_drop'),
     url(r'whatsapp-para-empresas/$', views.whatsapp4business, name='whatsapp4business'),
     url(r'cinco-motivos-para-apostar-em-um-app/$', views.fivereasons, name='fivereasons'),
+    url(r'o-que-considerar-em-um-app-para-o-seu-negocio/$', views.considerations, name='considerations'),
     url(r'^thanks/$', views.thanks, name='thanks'),
 ]
