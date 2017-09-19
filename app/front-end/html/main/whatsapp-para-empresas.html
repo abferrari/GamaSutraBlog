@@ -1,6 +1,30 @@
 <html>
 {% load staticfiles %}
 <head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->                           
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106651446-1"></script>
+<script>                                                                        
+  window.dataLayer = window.dataLayer || [];                                    
+  function gtag(){dataLayer.push(arguments)};                                   
+  gtag('js', new Date());                                                       
+                                                                                
+  gtag('config', 'UA-106651446-1');                                             
+</script>                                                                        
+                                                                                
+                                                                                
+<script>                                                                        
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                                                                                
+  ga('create', 'UA-106651446-1', 'auto');                                       
+  ga('send', 'pageview');                                                       
+                                                                                
+</script> 
+
+
 	<!-- Required meta tags -->
     <meta charset="utf-8">
 
@@ -133,7 +157,7 @@
 						<!--
 						<a class="share-btn fb-share-button" title="Compartilhe no Twitter" href="https://www.facebook.com/mobilegrowth.com.br/" target="_blank"><img src="img/FB-f-Logo_white_72.png" alt="Compartilhe no Twitter" /></a>
 						-->
-						<a class="share-btn share-btn-whatsapp" title="Compartilhar no WhatsApp" href="https://api.whatsapp.com/send?text=http%3A%2F%2Fwww.mobilegrowth.com.br{% url 'whatsapp4business' %}"><img src="{% static 'img/WhatsApp_Logo-01_color.png' %}" alt="Compartilhar no WhatsApp" /></a>
+						<a class="share-btn share-btn-whatsapp" title="Compartilhar no WhatsApp" href="https://api.whatsapp.com/send?text=http://www.mobilegrowth.com.br{% url 'whatsapp4business' %}"><img src="{% static 'img/WhatsApp_Logo-01_color.png' %}" alt="Compartilhar no WhatsApp" /></a>
 						<!--
 						<a class="share-btn fb-share-button" title="Compartilhe no LinkedIn" href="" target="_blank"><img src="img/FB-f-Logo_white_72.png" alt="Compartilhe no LinkedIn" /></a>
 						-->
