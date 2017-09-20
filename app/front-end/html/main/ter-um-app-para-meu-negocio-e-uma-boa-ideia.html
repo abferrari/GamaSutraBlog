@@ -1,0 +1,207 @@
+<html>
+{% load staticfiles %}
+
+<head>
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->                           
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106651446-1"></script>
+	<script>                                                                        
+	  window.dataLayer = window.dataLayer || [];                                    
+	  function gtag(){dataLayer.push(arguments)};                                   
+	  gtag('js', new Date());                                                       
+	                                                                                
+	  gtag('config', 'UA-106651446-1');                                             
+	</script>                                                                        
+	                                                                                
+	                                                                                
+	<script>                                                                        
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	                                                                                
+	  ga('create', 'UA-106651446-1', 'auto');                                       
+	  ga('send', 'pageview');                                                       
+	                                                                                
+	</script> 
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Ter um app para meu negócio, é uma boa ideia?</title>
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon_16x16.png' %}" sizes="16x16" />
+	<link rel="icon" type="image/png" href="{% static 'img/favicon_32x32.png' %}" sizes="32x32" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="description" content="Quais as informações que devem ser avaliadas antes de fazer um app" />
+
+    <meta property="og:url" content="http://mobilegrowth.com.br{% url 'havingapp4business' %}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ter um app para meu negócio, é uma boa ideia?" />
+    <meta property="og:description" content="Quais as informações que devem ser avaliadas antes de fazer um app" />
+    <meta property="og:image" content="{% static 'img/p03_pexels-photo-267392.jpeg' %}" />
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://mobilegrowth.com.br{% url 'havingapp4business' %}">
+    <meta name="twitter:title" content="O que considerar em um APP para o seu negócio">
+    <meta name="twitter:description" content="Quais as informações que devem ser avaliadas antes de fazer um app">
+    <meta name="twitter:image" content="{% static 'img/p03_pexels-photo-267392.jpeg' %}">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+	<header class="jumbotron cover">
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-12">
+				<a href="{% url 'main' %}"><img class="brand img-responsive" src="{% static 'img/brand.png' %}" /></a>
+			</div>
+			<div class="col-md-10 col-sm-10 col-xs-12" style="margin: initial 20px;">
+				<h1>Mobile Growth</h1>
+				<h3>Tudo sobre mobile apps para o seu negócio</h3>
+			</div>	
+ 		</div>
+	</header>
+	<main class="post-page">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-9">
+					<img class="post-cover img-responsive" src="{% static 'img/p04_photo_app.jpeg' %}" alt="Ops! Falha no carregamento da imagem... Segue direto para o post então, pode ser? ;-)" />
+					<!--
+					<p class="img-caption">Crédito da foto: <a href="https://visualhunt.com/re/20d0f6" target="_blank">Visualhunt.com</a> </p>
+					-->
+				</div>
+
+				<div class="col-md-8 col-sm-9 post-content">
+					<h6 class="post-date">Setembro 20, 2017</h6>
+
+					<h2 class="title post-title">Ter um app para meu negócio, é uma boa ideia?</h2>
+					<h4 class="subtitle post-subtitle">Quais as informações que devem ser avaliadas antes de fazer um app</h4>
+
+					<p>Ao pensar em desenvolver o seu próprio aplicativo é importante avaliar os diferentes tipos de tecnologia. Um aplicativo pode ser desenvolvido com o intuito de aproximar o cliente da marca ou gerar vendas. Qual seria o seu intuito?</p>
+
+					<p>Definindo o tipo de aplicativo você definirá quanto irá investir.</p>
+
+					<h3 class="subtitle-content">Qual tecnologia será melhor para o meu app?</h3>
+
+					<p>Considerar o tipo de <i>smartphone</i> mais usado por seus clientes poderá ajudá-lo nesta decisão. Desenvolver para iOS (Iphone) ou para Android? Entre estes dois tipos o iOS fica mais caro. Isso por que menos pessoas possuem <i>smartphones</i> da Apple, a grande maioria da população tem acesso a modelos mais populares, por isso o desenvolvimento para Android acaba sendo mais econômico e atinge uma grande parte deste mercado.</p>
+
+					<h3 class="subtitle-content">Por que ter o meu próprio app?</h3>
+
+					<p>As possibilidades de interagir direto com o seu cliente trará novas oportunidades de conhecê-lo melhor e fortalecer a marca junto a ele. Este canal direto com o cliente é um dos pontos fortes para o sucesso nas vendas e fortalecimento do branding.</p>
+
+					<img class="img-responsive img-content center-block" src="{% static 'img/p04_smartphone-user.jpg' %}" alt="Ops! Falha no carregamento da imagem... Continua lendo mesmo assim, tá? ;-)" />
+
+					<p>Por ter uma linguagem mais simples, os aplicativos proporcionam facilidade, é muito mais simples clicar e acessar o app do que ter que depender da internet para se conectar ao web site. O canal de comunicação é mais eficaz pois não depende da internet para utilizá-lo.</p>
+
+					<h3 class="subtitle-content">Quanto custa para investir em um app?</h3>
+
+					<p>Os valores variam, conforme o tipo de tecnologia escolhida você pode gastar em média de trinta a cinquenta mil reais.</p>
+
+					<p>Como explicado anteriormente, o tipo de tecnologia escolhida implicar´neste custo. Desenvolver um app para iOS é mais caro do que para Android. Se a ideia é atingir o maior público possível, desenvolver os dois tipos aumentará o custo deste investimento.</p>
+
+					<p>Mas é importante analisar o quanto este aplicativo lhe trará de retorno. Um investimento destes pode parecer muito caro mas o grande retorno que irá trazer pra sua empresa aumentará ainda mais sua receita.</p>
+
+					<div class="post-share-bts">
+						<p>Compartilhe</p>
+						
+						<a class="share-btn fb-share-button" title="Compartilhe no LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.mobilegrowth.com.br/ter-um-app-para-meu-negocio-e-uma-boa-ideia/" target="_blank"><img src="img/In-White-128px-R_color.png" alt="Compartilhe no LinkedIn" /></a>
+
+						<a class="share-btn fb-share-button" title="Compartilhar no Facebook" data-mobile-iframe="true" data-href="http://mobilegrowth.com.br{% url 'havingapp4business' %}" href="https://www.facebook.com/sharer/sharer.php?u=http://mobilegrowth.com.br{% url 'havingapp4business' %}&src=sdkpreparse" target="_blank"><img src="img/FB-f-Logo_color_72.png" alt="Compartilhar no Facebook" /></a>
+						<!--
+						<a class="share-btn fb-share-button" title="Compartilhe no Twitter" href="https://www.facebook.com/mobilegrowth.com.br/" target="_blank"><img src="" alt="Compartilhe no Twitter" /></a>
+						-->
+						<a class="share-btn share-btn-whatsapp" title="Compartilhar no WhatsApp" href="https://api.whatsapp.com/send?text=http%3A%2F%2Fwww.mobilegrowth.com.br{% url 'havingapp4business' %}"><img src="{% static 'img/WhatsApp_Logo-01_color.png' %}" alt="Compartilhar no WhatsApp" /></a>
+
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-9">
+					<div class="author">
+						<img src="{% static 'img/mel.jpg' %}" class="pic-profile" />
+						<div>
+							<p>Mel Morales</p>
+							<p>Setembro 20, 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<div class="row">
+				<form  method="post">
+					{% csrf_token %}
+					<div class="container">
+						<div class="col-md-8 col-sm-12 container form-newsletter">
+							<p>Quer receber dicas e materiais educativos sobre o impacto de mobile apps no seu negócio? Informe seu e-mail abaixo!</p>
+
+							<input type='hidden' name='csrfmiddlewaretoken' value='WApBBlv7BUfSTtTwuZQHohAzsRY1184kvGRUDQVR8lNFMy5IBzvwHbBdKCK1SCLG' />
+
+							<div class="col-md-6 col-sm-6">
+								<label for="id_first_name">Nome</label>
+								<input class="form-control" type="text" name="first_name" required id="id_first_name" maxlength="100" />
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<label for="id_last_name">Sobrenome</label>
+								<input class="form-control" type="text" name="last_name" required id="id_last_name" maxlength="100" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<label for="id_email">E-mail</label>
+								<input class="form-control" type="email" name="email" required id="id_email" maxlength="254" data-toggle="tooltip" data-placement="top" title="Temos conteúdo exclusivo para empresas, cadastre-se com seu e-mail corporativo (nome@empresa.com.br) para receber conteúdo exclusivo" />
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<input style="margin-top: 20px;" class="btn btn-default btn-primary center-block" type="submit" value="Inscreva-se!" />
+							</div>
+							<p class="col-md-12 col-sm-12 help-msg">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-sm-9">
+					<div class="post-references">
+						<p>Fontes para a construção desse artigo:</p>
+						<p><a href="http://www.rankmyapp.com.br/blog/o-custo-para-desenvolver-um-aplicativo-movel-vale-a-pena/" target="_blank">http://www.rankmyapp.com.br/blog/o-custo-para-desenvolver-um-aplicativo-movel-vale-a-pena/</a></p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer >
+		<div class="container">
+			<div class="row">
+				
+				<a class="share-btn fb-share-button" alt="Visite Mobile Growth no Facebook" href="https://www.facebook.com/mobilegrowth.com.br/" target="_blank"><img src="img/FB-f-Logo_white_72.png" alt="Visite o blog Mobile Growth no Facebook" /></a>
+				
+			</div>
+			<p>&nbsp;</p>
+			<div class="row copyright">
+				<p>Mobile Growth Blog. Todos os direito reservados. Setembro, 2017.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -100,6 +100,23 @@ def considerations(request):
 
     return render(request, 'main/o-que-considerar-em-um-app-para-o-seu-negocio.html', context)
 
+# Create your views here.
+def havingapp4business(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        lead.save()
+
+        return redirect(reverse('main'))
+
+    return render(request, 'main/ter-um-app-para-meu-negocio-e-uma-boa-ideia.html', context)
+
 def show(request):
     
     context = {'leads': Lead.list()}
