@@ -119,7 +119,7 @@ def lp_info(request):
         
         lead = lead_form.save(commit=False)
         lead.ip = get_client_ip(request)
-        #lead.save()
+        lead.save()
 
         # PDF download
         file_name = 'uso-de-despositivo-movel-e-usuarios-de-app.pdf'
