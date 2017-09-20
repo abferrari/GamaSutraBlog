@@ -12,4 +12,8 @@ $( document ).ready(function() {
   	$(".share-btn-whatsapp").hide();
   };
   */
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  
 });
