@@ -91,6 +91,11 @@ a:hover {
 .form-newsletter .btn {
 	font-size: 0.8rem;
 }
+.form-newsletter .help-msg {
+	font-size: 0.5rem !important;
+	font-weight: 300;
+	line-height: 1;
+}
 
 .card {
 	margin: 20px; 
@@ -248,3 +253,55 @@ footer .copyright p {
 .post-page .post-share-bts a {
 	margin: 0 10px;
 }
+
+/*----------------- Landing Page --------------------*/
+
+.landing-page {
+
+}
+
+.landing-page .cover {
+	min-height: 120px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.landing-page .cover img.brand {
+	height: 80px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.landing-page .cover h1 {
+	display: inline-block;
+	margin: 0;
+	line-height: 1;
+}
+
+.landing-page main {
+	margin-top: 5vh;
+}
+.landing-page main p, .landing-page main li {
+	font-size: 0.8rem;
+	line-height: 1.6;
+}
+.landing-page main p {
+	margin: 20px 0;
+}
+.landing-page h2.asset-title {
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+
+.landing-page .form-newsletter {
+	padding: 16px !important;
+	margin: 0 10px;
+}
+.landing-page .form-newsletter p.title {
+	font-size: 0.8rem;
+	line-height: 1.2;
+	margin: 8px !important;
+}
+
