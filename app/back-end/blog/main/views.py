@@ -121,13 +121,14 @@ def lp_info(request):
         #lead.save()
 
         # PDF download
-        response = HttpResponse(content_type='application/force-download')
         file_name = 'uso-de-despositivo-movel-e-usuarios-de-app.pdf'
         path_to_file = 'downloads/' + file_name
-        response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file_name)
-        response['X-Sendfile'] = smart_str(path_to_file)
+
+        with open(path_to_file, 'r') as pdf:
+            response = HttpResponse(pdf.read(), content_type='application/pdf')
+            response['Content-Disposition'] = 'inline;filename=%s' % file_name
+            return response
     
-        return response
         #return redirect(reverse('main'))
 
     return render(request, 'main/lp-infografico-uso-smartphone.html', context)
