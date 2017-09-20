@@ -97,6 +97,7 @@ a:hover {
 	font-weight: 300;
 	line-height: 1;
 	margin: 8px !important;
+	text-align: center;
 }
 
 .card {
