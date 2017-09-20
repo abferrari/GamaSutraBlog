@@ -3,6 +3,8 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
+from django.utils.encoding import smart_str
+from django.http import HttpResponse
 
 from main.models import Lead
 from main.forms import LeadForm
@@ -103,3 +105,30 @@ def show(request):
 
 
     return render(request, 'main/secret.html', context)
+
+
+# Create your views here.
+def lp_info(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        #lead.save()
+
+        # PDF download
+        response = HttpResponse(content_type='application/force-download')
+        file_name = 'uso-de-despositivo-movel-e-usuarios-de-app.pdf'
+        path_to_file = 'downloads/' + file_name
+        response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file_name)
+        response['X-Sendfile'] = smart_str(path_to_file)
+    
+        return response
+        #return redirect(reverse('main'))
+
+    return render(request, 'main/lp-infografico-uso-smartphone.html', context)
+
