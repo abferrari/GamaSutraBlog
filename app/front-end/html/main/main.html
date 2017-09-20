@@ -94,18 +94,23 @@
 		</div>
 	-->
 		<div class="container">
-			<!--
-			<div class="row">
-				<nav class="col-md-12">
-					<a href="">Estratégia</a>
-					<a href="">Design</a>
-					<a href="">Desenvolvimento</a>
-					<a href="">Gestão</a>	
-				</nav>
-			</div>
-			-->
+			
 			<div class="row">
 				<div class="col-md-10 col-sm-9">
+					<article class="card">
+						<a href="{% url 'lp_info' %}"><h2 class="title">Infográfico: uso de dispositivo móvel e usuários de apps</h2></a>
+						<h4 class="subtitle">Quer saber qual é a taxa de conversão em campanhas realizadas por meio de aplicativos? Acesse o infográfico para saber mais!</h4>
+
+						<div class="author">
+							<img src="{% static 'img/glauberty.jpg' %}" class="pic-profile" />
+							<div>
+								<p>Glauberty Blum</p>
+								<p>Setembro 20, 2017</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-5 col-sm-9">
 					<article class="card">
 						<a href="{% url 'whatsapp4business' %}"><h2 class="title">WhatsApp para empresas: conectando negócios e consumidores</h2></a>
 						<h4 class="subtitle">Conheça o aplicativo que ainda está em fase de testes</h4>
