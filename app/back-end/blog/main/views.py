@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from main.models import Lead
 from main.forms import LeadForm
 from main.ip_utils import get_client_ip
+from blog.settings import BASE_DIR
 
 # Create your views here.
 def main(request):
@@ -122,7 +123,7 @@ def lp_info(request):
 
         # PDF download
         file_name = 'uso-de-despositivo-movel-e-usuarios-de-app.pdf'
-        path_to_file = 'downloads/' + file_name
+        path_to_file = BASE_DIR + '/' + 'downloads/' + file_name
 
         with open(path_to_file, 'r') as pdf:
             response = HttpResponse(pdf.read(), content_type='application/pdf')
