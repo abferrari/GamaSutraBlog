@@ -181,6 +181,7 @@ def lp_caseadidasnike(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        # coisa feia! nao eh assim que se faz!!!
+        return render(request, 'main/case-nike-adidas.html')            
 
     return render(request, 'main/lp-case-adidas-nike.html', context)
