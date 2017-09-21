@@ -184,7 +184,7 @@ footer .copyright p {
 .post-page {
 
 }
-.post-page a {
+.post-page a, .landing-page a {
 	color: var(--orange-color);
 }
 .post-page .img-caption {
@@ -309,3 +309,9 @@ footer .copyright p {
 	margin: 8px !important;
 }
 
+.thanks {
+	height: 100vh !important;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
