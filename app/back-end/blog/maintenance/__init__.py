@@ -5,7 +5,8 @@ from maintenance.report import report
 def do():
     aaa = Lead.objects.all()
     for a in aaa:
-        print '%s %s %s %s' % (
+        print '%s %s %s %s %s' % (
+            a.id,
             a.first_name, 
             a.last_name, 
             localtime(a.timestamp), a.ip)
