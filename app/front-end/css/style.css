@@ -309,3 +309,9 @@ footer .copyright p {
 	margin: 8px !important;
 }
 
+.thanks {
+	height: 100vh !important;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
