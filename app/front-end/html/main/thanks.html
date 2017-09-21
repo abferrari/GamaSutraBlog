@@ -31,25 +31,25 @@
 
     <title>Você se cadastrou para receber novidades da Mobile Growth!</title>
 
-    <link rel="icon" type="image/png" href="img/favicon_16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="img/favicon_32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{% static 'img/favicon_16x16.png' %}" sizes="16x16" />
+	<link rel="icon" type="image/png" href="{% static 'img/favicon_32x32.png' %}" sizes="32x32" />
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <meta name="description" content="Tudo sobre mobile apps para o seu negócio" />
 
-    <meta property="og:url" content="http://mobilegrowth.com.br{% url 'main' %}" />
+    <meta property="og:url" content="http://mobilegrowth.com.br{% url 'thanks' %}" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Mobile Growth" />
     <meta property="og:description" content="Tudo sobre mobile apps para o seu negócio" />
-    <meta property="og:image" content="{% static 'img/brand.png' %}" />
+    <meta property="og:image" content="http://mobilegrowth.com.br{% static 'img/brand.png' %}" />
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="http://mobilegrowth.com.br{% url 'main' %}">
     <meta name="twitter:title" content="Mobile Growth">
     <meta name="twitter:description" content="Tudo sobre mobile apps para o seu negócio">
-    <meta name="twitter:image" content="{% static 'img/brand.png' %}">
+    <meta name="twitter:image" content="http://mobilegrowth.com.br{% static 'img/brand.png' %}">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
@@ -62,13 +62,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
 
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -86,7 +86,12 @@
 		<div class="container">	
 			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
+
+          {% if name %}
+					<h3 class="asset-title" style="text-align: center;">Obrigado {{name}}, se cadastrou para receber novidades da Mobile Growth!</h3>
+          {% else %}
 					<h3 class="asset-title" style="text-align: center;">Você se cadastrou para receber novidades da Mobile Growth!</h3>
+          {% endif %}
 
 					<p>Leia outras <a href="{% url 'main' %}">notícias da Mobile Growth</a> ou acesse nossa <a href="https://www.facebook.com/mobilegrowth.com.br/">página no Facebook</a> para ver o que as outras pessoas estão comentando sobre as soluções mobile para engajar consumidores e impulsionar vendas.</p>
 				</div>
@@ -97,7 +102,7 @@
 		<div class="container">
 			<div class="row">
 				
-				<a class="share-btn fb-share-button" alt="Visite Mobile Growth no Facebook" href="https://www.facebook.com/mobilegrowth.com.br/" target="_blank"><img src="img/FB-f-Logo_white_72.png" alt="Visite o blog Mobile Growth no Facebook" /></a>
+				<a class="share-btn fb-share-button" alt="Visite Mobile Growth no Facebook" href="https://www.facebook.com/mobilegrowth.com.br/" target="_blank"><img src="{% static 'img/FB-f-Logo_white_72.png' %}" alt="Visite o blog Mobile Growth no Facebook" /></a>
 				
 			</div>
 			<p>&nbsp;</p>
