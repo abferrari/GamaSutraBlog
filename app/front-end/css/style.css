@@ -184,7 +184,7 @@ footer .copyright p {
 .post-page {
 
 }
-.post-page a, .landing-page a {
+.post-page a {
 	color: var(--orange-color);
 }
 .post-page .img-caption {
