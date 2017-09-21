@@ -117,6 +117,23 @@ def havingapp4business(request):
 
     return render(request, 'main/ter-um-app-para-meu-negocio-e-uma-boa-ideia.html', context)
 
+# Create your views here.
+def casenikeadidas(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        lead.save()
+
+        return redirect(reverse('main'))
+
+    return render(request, 'main/case-nike-adidas.html', context)
+
 def show(request):
     
     context = {'leads': Lead.list()}
@@ -151,3 +168,19 @@ def lp_info(request):
 
     return render(request, 'main/lp-infografico-uso-smartphone.html', context)
 
+# Create your views here.
+def lp_caseadidasnike(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        lead.save()
+
+        return redirect(reverse('main'))
+
+    return render(request, 'main/lp-case-adidas-nike.html', context)
