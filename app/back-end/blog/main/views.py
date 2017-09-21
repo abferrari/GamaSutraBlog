@@ -24,7 +24,7 @@ def main(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/main.html', context)
 
@@ -44,7 +44,7 @@ def downloads_drop(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/downloads_drop.html', context)
    
@@ -62,7 +62,7 @@ def whatsapp4business(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/whatsapp-para-empresas.html', context)
   
@@ -79,7 +79,7 @@ def fivereasons(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/cinco-motivos-para-apostar-em-um-app.html', context)
 
@@ -96,7 +96,7 @@ def considerations(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/o-que-considerar-em-um-app-para-o-seu-negocio.html', context)
 
@@ -113,7 +113,7 @@ def havingapp4business(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/ter-um-app-para-meu-negocio-e-uma-boa-ideia.html', context)
 
@@ -130,14 +130,13 @@ def casenikeadidas(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('main'))
+        return redirect(reverse('thanks'))
 
     return render(request, 'main/case-nike-adidas.html', context)
 
 def show(request):
     
     context = {'leads': Lead.list()}
-
 
     return render(request, 'main/secret.html', context)
 
