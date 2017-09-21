@@ -293,6 +293,9 @@ footer .copyright p {
 .landing-page main p {
 	margin: 20px 0;
 }
+.landing-page a {
+	color: var(--orange-color);
+}
 .landing-page h2.asset-title {
 	font-size: 2rem;
 	font-weight: 600;
