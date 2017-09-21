@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'case-nike-adidas/$', views.casenikeadidas, name='casenikeadidas'),
     url(r'^thanks/$', views.thanks, name='thanks'),
     url(r'^infografico-uso-smartphone/$', views.lp_info, name='lp_info'),
-    url(r'^lp-case-adidas-nike/$', views.lp_caseadidasnike, name='lp_caseadidasnike'),
+    url(r'^study-case-adidas-nike/$', views.lp_caseadidasnike, name='lp_caseadidasnike'),
 
 
 
