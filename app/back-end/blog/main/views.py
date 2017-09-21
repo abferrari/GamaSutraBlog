@@ -29,7 +29,13 @@ def main(request):
     return render(request, 'main/main.html', context)
 
 def thanks(request):
-    return render(request, 'main/thanks.html')
+
+    context = {'name': ''}
+
+    if 'name' in request.GET:
+        context['name'] = request.GET['name']
+
+    return render(request, 'main/thanks.html', context)
 
 # Create your views here.
 def downloads_drop(request):
@@ -113,7 +119,7 @@ def havingapp4business(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/ter-um-app-para-meu-negocio-e-uma-boa-ideia.html', context)
 

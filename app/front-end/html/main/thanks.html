@@ -86,7 +86,12 @@
 		<div class="container">	
 			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
+
+          {% if name %}
+					<h3 class="asset-title" style="text-align: center;">Obrigado {{name}}, se cadastrou para receber novidades da Mobile Growth!</h3>
+          {% else %}
 					<h3 class="asset-title" style="text-align: center;">Você se cadastrou para receber novidades da Mobile Growth!</h3>
+          {% endif %}
 
 					<p>Leia outras <a href="{% url 'main' %}">notícias da Mobile Growth</a> ou acesse nossa <a href="https://www.facebook.com/mobilegrowth.com.br/">página no Facebook</a> para ver o que as outras pessoas estão comentando sobre as soluções mobile para engajar consumidores e impulsionar vendas.</p>
 				</div>
