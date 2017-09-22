@@ -24,7 +24,7 @@ def main(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/main.html', context)
 
@@ -50,7 +50,7 @@ def downloads_drop(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/downloads_drop.html', context)
    
@@ -68,7 +68,7 @@ def whatsapp4business(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/whatsapp-para-empresas.html', context)
   
@@ -85,7 +85,7 @@ def fivereasons(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/cinco-motivos-para-apostar-em-um-app.html', context)
 
@@ -102,7 +102,7 @@ def considerations(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/o-que-considerar-em-um-app-para-o-seu-negocio.html', context)
 
@@ -136,7 +136,7 @@ def casenikeadidas(request):
         lead.ip = get_client_ip(request)
         lead.save()
 
-        return redirect(reverse('thanks'))
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
 
     return render(request, 'main/case-nike-adidas.html', context)
 
@@ -190,3 +190,19 @@ def lp_caseadidasnike(request):
         return render(request, 'main/case-nike-adidas.html')            
 
     return render(request, 'main/lp-case-adidas-nike.html', context)
+
+def interaction(request):
+
+    lead_form = LeadForm(request.POST or None)
+
+    context = {'lead_form': lead_form}
+
+    if lead_form.is_valid():
+        
+        lead = lead_form.save(commit=False)
+        lead.ip = get_client_ip(request)
+        lead.save()
+
+        return redirect(reverse('thanks') + '?name=' + lead.first_name)
+
+    return render(request, 'main/a-interacao-entre-empresa-e-cliente-via-app.html', context)   
