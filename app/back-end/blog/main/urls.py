@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'o-que-considerar-em-um-app-para-o-seu-negocio/$', views.considerations, name='considerations'),
     url(r'ter-um-app-para-meu-negocio-e-uma-boa-ideia/$', views.havingapp4business, name='havingapp4business'),
     url(r'case-nike-adidas/$', views.casenikeadidas, name='casenikeadidas'),
+    url(r'a-interacao-entre-empresa-e-cliente-via-app/$', views.interaction, name='interaction'),
     url(r'^thanks/$', views.thanks, name='thanks'),
     url(r'^infografico-uso-smartphone/$', views.lp_info, name='lp_info'),
     url(r'^study-case-adidas-nike/$', views.lp_caseadidasnike, name='lp_caseadidasnike'),
