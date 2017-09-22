@@ -381,7 +381,7 @@ footer .copyright p {
 }
 .link-lp .icon {
 	color: white;
-	font-size: 5vw;
+	font-size: calc(56px + 2vw);
 
 	flex: 0 0;
 	align-self: flex-start;
